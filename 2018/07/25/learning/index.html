@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="ultranumb&#39;s code">
 <meta property="og:description" content="面试题目Retrofit的实现与原理Retrofit是一个基于AOP思想，对RestfulApi注解进行动态代理的网络框架。主要用到的就是java里面的动态代理。retrofit 非常巧妙的利用注解来描述一个http请求，将一个http请求抽象成一个java接口，然后利用java动态代理的方式，动态的将这个接口的注解变成一个http请求，最后执行这个请求。 hashmap原理 hash冲突 并发集">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-26T02:16:31.000Z">
+<meta property="og:updated_time" content="2018-07-26T07:11:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learning...">
 <meta name="twitter:description" content="面试题目Retrofit的实现与原理Retrofit是一个基于AOP思想，对RestfulApi注解进行动态代理的网络框架。主要用到的就是java里面的动态代理。retrofit 非常巧妙的利用注解来描述一个http请求，将一个http请求抽象成一个java接口，然后利用java动态代理的方式，动态的将这个接口的注解变成一个http请求，最后执行这个请求。 hashmap原理 hash冲突 并发集">
@@ -99,11 +99,14 @@
 <p>就返回，没有就从内存缓存的Lrucache缓存中查找，如果有就返回并存入弱引用缓存，如果没有就去查看</p>
 <p>磁盘缓存，磁盘缓存有几种策略，常用的策略还是缓存转换后的图片，先加密key，然后去磁盘日志文件中</p>
 <p>查找有没有记录，如果有就根据记录的文件名称获取图片文件并返回，如果没有记录，就从网络获取图片</p>
+<h3 id="adb"><a href="#adb" class="headerlink" title="adb"></a>adb</h3><p>adb是android debug bridge 的缩写，意思是android调式桥。是android的sdk中提供的一个很实用的命令行工具。<br>常用命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">查看连接计算机的设备 adb devices</span><br><span class="line">查看adb 版本 adb version</span><br><span class="line">获取序列号 adb get-serialno</span><br><span class="line">查看日志 adb logcat</span><br><span class="line">查看帮助 adb <span class="built_in">help</span></span><br><span class="line">重启机器 adb reboot</span><br><span class="line">关闭手机 adb shutdown</span><br><span class="line">重启到刷机模式bootloader adb reboot bootloader</span><br><span class="line">查看bug adb bugreport</span><br></pre></td></tr></table></figure></p>
+<h3 id="android消息机制"><a href="#android消息机制" class="headerlink" title="android消息机制"></a>android消息机制</h3><p>android的消息机制主要是指handler的运行机制。</p>
+<h3 id="子线程真的不能更新ui吗？"><a href="#子线程真的不能更新ui吗？" class="headerlink" title="子线程真的不能更新ui吗？"></a>子线程真的不能更新ui吗？</h3><p>在onresume（）和onresume（）之前通过子线程更新ui是可以成功的 即oncreate（） onstart（） onresume（）方法</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/25/learning/" data-id="cjk1x9jut0001lyou9sobvk2d" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/25/learning/" data-id="cjk286cqx0000w8ouk5t6c10r" class="article-share-link">Share</a>
       
       
     </footer>
